@@ -19,8 +19,8 @@
   <body>
     <!--header section-->
     <header>
-      <div>
-        <img src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
+      <div class="container">
+        <img class="logo" src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -35,65 +35,71 @@
     <main>
 
       <!-- Hero Section -->
-      <div>
-        <div>
+      <div id="hero"> <!--start hero section-->
+        <div class="container"> <!--start container holding hero content-->
           <h1> Hi, I'm Camilla</h1>
           <p>
             <span></span>
           </p>
         <h3>
-          I am a UX designer based in Salt Lake City. I love cooking, the ocean and my cat Pearly. I value creativity and love to find creative solutions to problems.
+          I am a UX designer based in Salt Lake City. I love cooking, the ocean and my cat, Pearly. I value creativity and love to find creative solutions to problems.
         </h3>
-        </div>
-      </div>
+        </div> <!--end container holding hero content-->
+      </div> <!--end hero section-->
       <!-- End Hero Section -->
 
       <!-- Work/Projects -->
-      <div><!-- open row that holds (2) columns for project -->
-        <div><!-- open first column (used for image) -->
-          <picture>
-            <source srcset="img/lumen/thumb@1x.jpg" media="(max-width:767px)">
-            <img src="img/lumen/thumb@2x.jpg" alt="Lumen Preview">
-          </picture>
-        </div><!-- end first column -->
-        <div><!-- open second column (used for text) -->
-          <h3>Lumen</h3><!-- heading for the project -->
-          <p><!-- open paragraph -->
-            A habit based health and wellness app I designed from start to finish as part of my UX course on Careerfoundry.
-          </p><!-- end paragraph -->
-          <p><!-- open paragraph -->
-            Skills: Research, Wireframing, Prototyping, Testing
-          </p><!-- end paragraph -->
-          <a href="lumen.html" class="button">Read more</a><!-- button or link label -->
-        </div><!-- end second column -->
-      </div><!-- end row that holds (2) columns for project -->
+      <div id="work"><!--start work projects section-->
+        <div class="container"><!--start container-->
+          <h2>My Work</h2>
 
-      <div><!-- open row that holds (2) columns for project -->
-        <div><!-- open first column (used for image) -->
-          <picture>
-            <source srcset="img/polyglot/thumb@1x.jpg" media="(max-width:767px)">
-            <img src="img/polyglot/thumb@2x.jpg" alt="Polyglot Preview">
-          </picture>
-        </div><!-- end first column -->
-        <div><!-- open second column (used for text) -->
-          <h3>Polyglot</h3><!-- heading for the project -->
-          <p><!-- open paragraph -->
-            Polyglot is a language learning app designed with community and peer support at its center.
-          </p><!-- end paragraph -->
-          <p><!-- open paragraph -->
-            Skills: Research, Wireframing, Prototyping, Testing
-          </p><!-- end paragraph -->
-          <a href="polyglot.html" class="button">Read more</a><!-- button or link label -->
-        </div><!-- end second column -->
-      </div><!-- end row that holds (2) columns for project -->
+          <div class="row"><!--start container that holds project in 2 columns-->
+            <div><!--start first column to hold image-->
+              <picture>
+                <source srcset="img/lumen/thumb@1x.jpg" media="(max-width:767px)">
+                <img src="img/lumen/thumb@2x.jpg" alt="Lumen Preview">
+              </picture>
+            </div><!--end first column-->
+            <div><!--open second column to hold text-->
+              <h3>Lumen</h3><!--heading for the project-->
+              <p><!--open paragraph-->
+                A habit based health and wellness app I designed from start to finish as part of my UX course on Careerfoundry.
+              </p><!--end paragraph-->
+              <p><!--open paragraph-->
+                Skills: Research, Wireframing, Prototyping, Testing
+              </p><!--end paragraph-->
+              <a href="lumen.html" class="button">Read more</a><!--button or link label-->
+            </div><!--end second column-->
+          </div><!--end container that holds project in 2 columns-->
+
+          <div class="row"><!--start container that holds project in 2 columns-->
+            <div><!--start first column to hold image-->
+              <picture>
+                <source srcset="img/polyglot/thumb@1x.jpg" media="(max-width:767px)">
+                <img src="img/polyglot/thumb@2x.jpg" alt="Polyglot Preview">
+              </picture>
+            </div><!--end first column-->
+            <div><!--open second column to hold text-->
+              <h3>Polyglot</h3><!--heading for the project-->
+              <p><!--open paragraph-->
+                Polyglot is a language learning app designed with community and peer support at its center.
+              </p><!--end paragraph-->
+              <p><!--open paragraph-->
+                Skills: Research, Wireframing, Prototyping, Testing
+              </p><!--end paragraph-->
+              <a href="polyglot.html" class="button">Read more</a><!-- button or link label -->
+            </div><!--end second column-->
+          </div><!--end container that holds project in 2 columns-->
+        </div><!--end container-->
+      </div><!--end work projects section-->
       <!-- End Work/Projects -->
 
     </main>
-      
+
 
 
       <footer id="contact">
-        <div>
+        <div class="container">
           <h2>Get in Touch</h2>
           <p>
             Do you have a design project you need help with? I'd love to chat about it!
@@ -110,15 +116,15 @@
           <!--Social Media Layout and Placeholders-->
           <ul>
             <li><!-- LinkedIn profile -->
-              <a href="https://www.linkedin.com/in/camilla-porto-355985242/" target="_blank"></a>
+              <a class="linkedin" href="https://www.linkedin.com/in/camilla-porto-355985242/" target="_blank"></a>
                             <!-- LinkedIn icon --><i class="fa-brands fa-linkedin"></i>
             </li>
             <li><!-- Behance profile -->
-              <a href="https://www.behance.net/camillaporto2" target="_blank"></a>
+              <a class="behance" href="https://www.behance.net/camillaporto2" target="_blank"></a>
                             <!-- Behance icon --><i class="fa-brands fa-behance-square"></i>
             </li>
             <li><!-- Instagram profile -->
-              <a href="https://www.instagram.com/porto_camilla/" target="_blank"></a>
+              <a class="instagram" href="https://www.instagram.com/porto_camilla/" target="_blank"></a>
                             <!-- Instagram icon --><i class="fa-brands fa-instagram-square"></i>
             </li>
           </ul>

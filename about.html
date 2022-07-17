@@ -19,8 +19,8 @@
   <body>
     <!--header section-->
     <header>
-      <div>
-        <img src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
+      <div class="container">
+        <img class="logo" src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -30,17 +30,18 @@
         </nav>
       </div>
     </header>
+    <!--end header section-->
 
-    <main>
-      <div><!--orange section 1) -->
-
-        <div><!--yellow container 1-->
+    <!--Start about section-->
+    <main class="aboutme">
+      <div class="abouttitle"><!-- start about section title -->
+        <div class="container"><!--start container to hold title-->
           <h1>About Me</h1>
-        </div><!--close yellow container 1-->
-      </div><!--close orange section 1-->
+        </div><!--close container to hold title-->
+      </div><!--close about section title-->
 
-      <div><!--organge section 2-->
-        <div><!--yellow container 2-->
+      <div><!--Start about section content-->
+        <div class="container"><!-- start container holding all content -->
           <picture>
             <source srcset="img/profile/profile@1x.png" media="(max-width:767px)">
               <img src="img/profile/profile@2x.png" alt="My Image">
@@ -90,13 +91,14 @@
 
            </div><!--close skills and tools columns-->
           </div><!--close green row for columns-->
-        </div><!--close yellow container 2-->
-      </div><!--close orange section 2-->
+        </div class="container"><!--end container holding all content-->
+      </div><!--close about section content-->
 
     </main>
+    <!--end about section-->
 
     <footer id="contact">
-      <div>
+      <div class="container">
         <h2>Get in Touch</h2>
         <p>
           Do you have a design project you need help with? I'd love to chat about it!

@@ -3,13 +3,17 @@ colors used:
 Dark Blue (text): #122736
 Dark Teal (Primary): #365C65
 Warm Grey (background): #9FA6A1
-Beige (background): #F8FBE7
+Beige (background): #FFFCF2
 Orange (accent): #EF8108
 */
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #F8FBE7;
+  background-color: #FFFCF2;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -71,7 +75,7 @@ a:focus {
 
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #365C65;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
@@ -100,4 +104,80 @@ a:focus {
 .button.contact:hover {
   background-color: #EF8108;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+header {
+  background-color: #FFFCF2;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  position: relative;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#hero {
+  background-color: #FFFCF2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 150px;
+  margin-top: 15px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #365C65;
+}
+
+nav > ul > li > a:visited {
+  color: #365C65;
+}
+
+/* about page styling */
+.aboutme h1 {
+  text-align: center;
+}
+.abouttitle {
+  text-align: center;
+  padding: px 10;
+  display: inline-block;
+  width: 100%;
+}
+
+/*footer styling*/
+#contact h2 {
+  text-align: center;
+}
+#contact p {
+  text-align: center;
 }
