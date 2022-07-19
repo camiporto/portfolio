@@ -37,19 +37,20 @@
       <div class="abouttitle"><!-- start about section title -->
         <div class="container"><!--start container to hold title-->
           <h1>About Me</h1>
-        </div><!--close container to hold title-->
-      </div><!--close about section title-->
+        </div><!--end container to hold title-->
+      </div><!--end about section title-->
 
       <div><!--Start about section content-->
         <div class="container"><!-- start container holding all content -->
-          <picture>
-            <source srcset="img/profile/profile@1x.png" media="(max-width:767px)">
-              <img src="img/profile/profile@2x.png" alt="My Image">
+          <div class="center">
+            <picture>
+              <source srcset="img/profile/profile@1x.png" media="(max-width:767px)">
+                <img class="profile" src="img/profile/profile@2x.png" alt="My Image">
             </picture>
+          </div>
 
-          <div><!--green row for columns-->
-
-            <div><!--my story column-->
+          <div class="row"><!--start container holding content-->
+            <div class="col-md-6 col-lg-7"><!--start container holding About Me content-->
               <h2>My Story</h2>
               <p>
                 Hi! I am Camilla, a UX/UI designer based in Salt Lake City, UT.
@@ -57,73 +58,71 @@
               <p>
                 I was born in Brazil and moved quite often growing up, which greatly influenced how I see the world and my openness to art, culture and food. I love to cook and explore new places with friends and family. I like to use my experience with science, technology and education to enhance the way people interact with my designs. One of my favorite activities is to think about everyday problems creatively and produce new and more fun ways to do things.
               </p>
-              <a href="files/resume.pdf" target="_blank" class="button">View my Resume</a>
-            </div><!--close my story column-->
+              <div> <!--resume link-->
+                <a href="files/resume.pdf" target="_blank" class="button">View my Resume</a>
+              </div><!--end resume link-->
+            </div><!--end container holding about me content-->
 
-            <div><!--skills and tools column-->
+
+            <div class="row"><!--start container holding skills and tools-->
               <h2>Skills and Tools</h2>
 
-              <div><!--column 1-->
-                <h3>Relevant Skills</h3>
-                  <ul>
-                    <li>UI/UX design</li>
-                    <li>User research</li>
-                    <li>Usability testing and analysis</li>
-                    <li>Style guide design</li>
-                    <li>Rapid prototyping</li>
-                    <li>Web Design</li>
-                    <li>Web Development</li>
-                  </ul>
-              </div><!--close column 1-->
-
-              <div><!--column 2-->
+              <div><!--open containers for skills and tools boxes-->
+                <div class="col-md-6 col-lg-5"><!--open skills section-->
+                  <h3>Relevant Skills</h3>
+                    <ul>
+                      <li>UI/UX design</li>
+                      <li>User research</li>
+                      <li>Usability testing and analysis</li>
+                      <li>Style guide design</li>
+                      <li>Rapid prototyping</li>
+                      <li>Web Design</li>
+                      <li>Web Development</li>
+                      <li>Illustration</li>
+                      <li>HTML, CSS</li>
+                      <li>Javascript</li>
+                    </ul>
+                  </div><!--close skills section-->
+              <div class="col-md-6 col-lg-5"><!--open tools section-->
                <h3>Tools I use</h3>
-               <ul>
-                 <li>InVision</li>
-                 <li>Balsamiq</li>
-                 <li>Adobe Suite</li>
-                 <li>Lucidchart</li>
-                 <li>HTML</li>
-                 <li>CSS</li>
-                 <li>JavaScript</li>
-               </ul>
-             </div><!--close column 2-->
-
-           </div><!--close skills and tools columns-->
-          </div><!--close green row for columns-->
-        </div class="container"><!--end container holding all content-->
+                 <ul>
+                   <li>InVision</li>
+                   <li>Balsamiq</li>
+                   <li>Adobe Suite</li>
+                   <li>Lucidchart</li>
+                   <li>Figma</li>
+                 </ul>
+              </div><!--close tools section-->
+            </div><!--close containers for skills and tools boxes-->
+          </div><!--close container holding skills and tools-->
+        </div><!--end container holding content-->
       </div><!--close about section content-->
+    </div><!--end about section content-->
+  </main><!--end about section-->
 
-    </main>
-    <!--end about section-->
-
-    <footer id="contact">
-      <div class="container">
+    <footer id="contact"><!--open footer section-->
+      <div class="container"><!--open container holding footer content-->
         <h2>Get in Touch</h2>
         <p>
           Do you have a design project you need help with? I'd love to chat about it!
         </p>
-        <div>
-          <a href="tel:+18016641772" class="button contact"> Call me </a>
-        </div>
-        <div>
-          <a href="mailto:camm.porto@gmail.com" class="button contact">Email me</a>
-        </div>
+        <div class="center"><!--open contact links-->
+          <p><a href="tel:+18016641772" class="button contact"> Call me </a></p>
+          <p><a href="mailto:camm.porto@gmail.com" class="button contact">Email me</a></p>
+        </div><!--close contact links-->
       </div>
-
-      <div>
-        <!--Social Media Layout and Placeholders-->
+      <div class="social media"><!--open social media links-->
         <ul>
           <li><!-- LinkedIn profile -->
-            <a href="https://www.linkedin.com/in/camilla-porto-355985242/" target="_blank"></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/camilla-porto-355985242/" target="_blank"></a>
                           <!-- LinkedIn icon --><i class="fa-brands fa-linkedin"></i>
           </li>
           <li><!-- Behance profile -->
-            <a href="https://www.behance.net/camillaporto2" target="_blank"></a>
+            <a class="behance" href="https://www.behance.net/camillaporto2" target="_blank"></a>
                           <!-- Behance icon --><i class="fa-brands fa-behance-square"></i>
           </li>
           <li><!-- Instagram profile -->
-            <a href="https://www.instagram.com/porto_camilla/" target="_blank"></a>
+            <a class="instagram" href="https://www.instagram.com/porto_camilla/" target="_blank"></a>
                           <!-- Instagram icon --><i class="fa-brands fa-instagram-square"></i>
           </li>
         </ul>
