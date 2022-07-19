@@ -49,7 +49,9 @@ img {
   width: 100%;
 }
 
-/* links */
+/* ==============================
+Links
+================================= */
 
 a {
   color: #000000;
@@ -74,7 +76,9 @@ a:focus {
   color: #FFFCF2;
 }
 
-/* Buttons */
+/* ==============================
+Buttons
+================================= */
 
 .button {
   display: inline-block;
@@ -109,8 +113,9 @@ a:focus {
   color: #ffffff;
 }
 
-/* Layout styling */
-
+/* ==============================
+Layout Styling
+================================= */
 header {
   background-color: #FFFCF2;
   padding: 10px 0;
@@ -179,7 +184,9 @@ nav > ul > li > a:visited {
 }
 
 
-/* about page styling */
+/* ==============================
+About Page Styling
+================================= */
 .aboutme h1 {
   text-align: center;
 }
@@ -200,87 +207,28 @@ nav > ul > li > a:visited {
 
 
 
-/*footer styling*/
+/* ==============================
+Footer Styling
+================================= */
 #contact h2 {
   text-align: center;
 }
+
 #contact p {
   text-align: center;
 }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-#hero span {
-      display: block;
-  }
-
-.col-md-6 {
-    width: 50%;
-    padding-right: 20px;
-  }
-
-[class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  }
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  }
-
+.social{
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+  text-align: center;
 }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-
-.container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-.col-lg-5 {
-  width: 41.66%;
-  }
-
-.col-lg-7 {
-  width: 58.33%;
-  }
-
-[class*="col-"] {
-    float: left;
-    padding-left: 10px;
-  }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-}
-
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+.social li{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* ==============================
@@ -317,4 +265,83 @@ Berlin Illustration Animation Example
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Media Queries
+================================= */
+
+/*clear page flow*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*float all columns left*/
+[class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+#hero span {
+      display: block;
+  }
+
+.col-md-6 {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+.col-lg-5 {
+  width: 40%;
+  }
+
+.col-lg-7 {
+  width: 60%;
+  float: left;
+  padding-bottom: 40px;
+  }
+.col-lg-8{
+  width: 40%;
+  float: right;
+}
+#aboutme .col-md-6{
+  width: 100%
+}
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
