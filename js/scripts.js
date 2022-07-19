@@ -1,3 +1,1 @@
-<script>
-  alert("Hello");
-</script>
+console.log("It's a me")
