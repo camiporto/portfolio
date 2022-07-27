@@ -20,14 +20,17 @@
     <!--header section-->
     <header>
       <div class="container">
-        <img class="logo" src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/profile/logo@1x.png" alt="Camilla Porto Logo">
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+        </div>
       </div>
     </header>
     <!--end header section-->
@@ -106,12 +109,14 @@
       <p>
         Do you have a design project you need help with? I'd love to chat about it!
       </p>
+
       <div>
         <p><a href="tel:+18016641772" class="button contact"> Call me </a></p>
       </div>
       <div>
         <p><a href="mailto:camm.porto@gmail.com" class="button contact">Email me</a></p>
       </div>
+
     </div>
 
     <div>
@@ -134,7 +139,10 @@
       <p>Copyright Camilla 2022</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+
   <script src="js/scripts.js"></script>
 
-  </body>
+</body>
 </html>

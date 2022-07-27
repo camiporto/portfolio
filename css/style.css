@@ -118,8 +118,8 @@ Layout Styling
 ================================= */
 header {
   background-color: #FFFCF2;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 0 4px;
+
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
@@ -166,10 +166,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -182,6 +179,44 @@ nav > ul > li > a {
 nav > ul > li > a:visited {
   color: #365C65;
 }
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/* display all elements except the last one */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+/* the .responsive is for javascript later */
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+
 
 
 /* ==============================
@@ -289,6 +324,7 @@ Media Queries
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
 header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -299,6 +335,23 @@ nav {
     float: right;
     margin-top: 4px;
   }
+
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  }
+
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+.navtoggle li:last-child {
+    display: none;
+  }
+
 #hero span {
       display: block;
   }
