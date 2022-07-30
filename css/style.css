@@ -73,7 +73,7 @@ a:active { /* selected link */
 
 a:hover,
 a:focus {
-  color: #FFFCF2;
+  color: #EF8108;
 }
 
 /* ==============================
@@ -180,33 +180,11 @@ nav > ul > li > a:visited {
   color: #365C65;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
+/* ==============================
+hamburger menu
+================================= */
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-/* display all elements except the last one */
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-/* the .responsive is for javascript later */
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
 
 .navtoggle li .icon {
   position: absolute;
@@ -216,7 +194,35 @@ nav > ul > li > a:visited {
   padding-right: 0;
 }
 
+/* display all elements except the last one */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
+/* the .responsive is for javascript later */
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  margin-bottom: -51%;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0,5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 
 /* ==============================
