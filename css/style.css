@@ -7,13 +7,12 @@ Beige (background): #FFFCF2
 Orange (accent): #EF8108
 */
 
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -21,7 +20,10 @@ body {
   color: #122736;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -54,12 +56,12 @@ Links
 ================================= */
 
 a {
-  color: #000000;
+  color: #fff;
   text-decoration: none;
 }
 
 a:visited { /* visited link */
-  color: #1b2e33;
+  color: #fff;
 }
 
 a:hover {
@@ -73,7 +75,7 @@ a:active { /* selected link */
 
 a:hover,
 a:focus {
-  color: #EF8108;
+  color: #fff;
 }
 
 /* ==============================
@@ -82,13 +84,13 @@ Buttons
 
 .button {
   display: inline-block;
-  background-color: #EF8108;
-  color: #365C65; /* needed to override the default link color */
+  background-color: #365c65;
+  color: #fff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994C30; /* width of the border, type, color */
+  border-bottom: 0px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -104,22 +106,22 @@ Buttons
 
 .button.contact {
   background-color: transparent;
-  color: #EF8108;
+  color: #365c65;
   text-transform: uppercase;
-  border: 2px solid #EF8108;
+  border: 2px solid #365c65;
 }
+
 .button.contact:hover {
-  background-color: #EF8108;
-  color: #ffffff;
+  background-color: #365c65;
+  color: #fff;
 }
 
 /* ==============================
 Layout Styling
 ================================= */
 header {
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   padding: 10px 0 4px;
-
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
@@ -152,7 +154,7 @@ header {
 }
 
 #hero {
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -173,18 +175,16 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #365C65;
+  color: #365c65;
 }
 
 nav > ul > li > a:visited {
-  color: #365C65;
+  color: #365c65;
 }
-
 
 /* ==============================
 hamburger menu
 ================================= */
-
 
 .navtoggle li .icon {
   position: absolute;
@@ -200,11 +200,12 @@ hamburger menu
 }
 
 /* the .responsive is for javascript later */
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -214,16 +215,15 @@ hamburger menu
   margin-bottom: -51%;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0,5);
+  border-top: 1px solid rgba(255, 127, 80, 0, 5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /* ==============================
 About Page Styling
@@ -231,12 +231,14 @@ About Page Styling
 .aboutme h1 {
   text-align: center;
 }
+
 .abouttitle {
   text-align: center;
   padding: px 10;
   display: inline-block;
   width: 100%;
 }
+
 .profile {
   max-width: 350px;
   margin-top: 15px;
@@ -245,8 +247,6 @@ About Page Styling
 .center {
   text-align: center;
 }
-
-
 
 /* ==============================
 Footer Styling
@@ -259,14 +259,14 @@ Footer Styling
   text-align: center;
 }
 
-.social{
+.social {
   list-style-type: none;
   padding: 0;
   margin-left: -10px;
   text-align: center;
 }
 
-.social li{
+.social li {
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
@@ -280,10 +280,11 @@ Berlin Illustration Animation Example
   max-width: 100%;
   height: auto;
 }
+
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -291,8 +292,8 @@ Berlin Illustration Animation Example
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -300,8 +301,8 @@ Berlin Illustration Animation Example
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
@@ -312,91 +313,88 @@ Berlin Illustration Animation Example
 Media Queries
 ================================= */
 
-/*clear page flow*/
+/* clear page flow */
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  content: "";
+  clear: both;
+  display: table;
+}
 
-/*float all columns left*/
+/* float all columns left */
 [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-  }
-
+  float: left;
+  padding-left: 10px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-header {
+  header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
-nav {
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-nav > ul {
-  margin: 1em 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  nav > ul {
+    margin: 1em 0;
   }
 
-.navtoggle li:not(:last-child) {
+  nav > ul > li {
     display: inline-block;
   }
 
-.navtoggle li:last-child {
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
     display: none;
   }
 
-#hero span {
-      display: block;
+  #hero span {
+    display: block;
   }
 
-.col-md-6 {
+  .col-md-6 {
     width: 50%;
     padding-right: 20px;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-.container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-.col-lg-5 {
-  width: 40%;
+  .col-lg-5 {
+    width: 40%;
   }
 
-.col-lg-7 {
-  width: 60%;
-  float: left;
-  padding-bottom: 40px;
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
   }
-.col-lg-8{
-  width: 40%;
-  float: right;
-}
-#aboutme .col-md-6{
-  width: 100%
-}
 
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+
+  #aboutme .col-md-6 {
+    width: 100%;
+  }
 }
 
 /* ==============================
