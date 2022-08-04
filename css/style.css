@@ -1,10 +1,10 @@
 /*
 colors used:
 Dark Blue (text): #122736
-Dark Teal (Primary): #365C65
-Warm Grey (background): #9FA6A1
-Beige (background): #FFFCF2
-Orange (accent): #EF8108
+Dark Teal (Primary): #365c65
+Warm Grey (background): #9fa6a1
+Beige (background): #fffcf2
+Orange (accent): #ef8108
 */
 
 * {
@@ -33,12 +33,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -146,23 +146,25 @@ header {
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  color: #fff;
 }
 
 #hero h3 {
   text-align: center;
+  color: #fff;
 }
 
 #hero {
-  background-color: #fffcf2;
-  padding: 20px 0;
+  background-color: #365c65;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
 
 .logo {
-  max-width: 150px;
-  margin-top: 15px;
+  max-width: 50px;
+  margin-top: 5px;
 }
 
 nav > ul {
@@ -270,6 +272,10 @@ Footer Styling
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.copyright p {
+  text-align: left;
 }
 
 /* ==============================
@@ -400,5 +406,8 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
+
+/*
 @media only screen and (min-width: 1440px) {
 }
+*/
