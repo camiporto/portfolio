@@ -253,6 +253,11 @@ About Page Styling
 /* ==============================
 Footer Styling
 ================================= */
+
+footer {
+  background-color: #365c65;
+}
+
 #contact h2 {
   text-align: center;
 }
