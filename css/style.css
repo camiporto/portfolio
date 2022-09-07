@@ -11,10 +11,6 @@ Orange (accent): #ef8108
   box-sizing: border-box;
 }
 
-footer {
-  background-color: #365c65;
-}
-
 body {
   background-color: #fffcf2;
   font-family: 'Montserrat', sans-serif;
@@ -257,6 +253,10 @@ About Page Styling
 /* ==============================
 Footer Styling
 ================================= */
+
+footer {
+  background-color: #365c65;
+}
 
 #contact h2 {
   text-align: center;
