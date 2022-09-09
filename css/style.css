@@ -106,14 +106,14 @@ Buttons
 
 .button.contact {
   background-color: transparent;
-  color: #365c65;
+  color: #fffcf2;
   text-transform: uppercase;
-  border: 2px solid #365c65;
+  border: 2px solid #fffcf2;
 }
 
 .button.contact:hover {
-  background-color: #365c65;
-  color: #fff;
+  background-color: #fff;
+  color: #365c65;
 }
 
 /* ==============================
@@ -255,28 +255,31 @@ Footer Styling
 ================================= */
 
 footer {
+  padding: 10px;
   background-color: #365c65;
 }
 
 #contact h2 {
+  color: #fffcf2;
   text-align: center;
 }
 
 #contact p {
+  color: #fffcf2;
   text-align: center;
 }
 
 .social {
   list-style-type: none;
-  padding: 0;
-  margin-left: -10px;
+  padding: 10px;
   text-align: center;
 }
 
 .social li {
+  font-size: 30px;
+  color: #fffcf2;
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .copyright p {
