@@ -65,17 +65,17 @@ a:visited { /* visited link */
 }
 
 a:hover {
-  color: #264047;
+  color: #b1d0d7;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #994c30;
+  color: #b1d0d7;
 }
 
 a:hover,
 a:focus {
-  color: #fff;
+  color: #b1d0d7;
 }
 
 /* ==============================
@@ -213,7 +213,7 @@ hamburger menu
 
 .navtoggle.responsive nav {
   background-color: #f2f2f2;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: -51%;
 }
 
@@ -283,7 +283,7 @@ footer {
 }
 
 .copyright p {
-  text-align: left;
+  font-size: 12px;
 }
 
 /* ==============================
