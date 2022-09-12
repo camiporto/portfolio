@@ -65,17 +65,21 @@ a:visited { /* visited link */
 }
 
 a:hover {
-  color: #264047;
+  color: #b1d0d7;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #994c30;
+  color: #b1d0d7;
 }
 
 a:hover,
 a:focus {
-  color: #fff;
+  color: #b1d0d7;
+}
+
+.download {
+  color: #365c65;
 }
 
 /* ==============================
@@ -106,14 +110,14 @@ Buttons
 
 .button.contact {
   background-color: transparent;
-  color: #365c65;
+  color: #fffcf2;
   text-transform: uppercase;
-  border: 2px solid #365c65;
+  border: 2px solid #fffcf2;
 }
 
 .button.contact:hover {
-  background-color: #365c65;
-  color: #fff;
+  background-color: #fff;
+  color: #365c65;
 }
 
 /* ==============================
@@ -213,7 +217,7 @@ hamburger menu
 
 .navtoggle.responsive nav {
   background-color: #f2f2f2;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: -51%;
 }
 
@@ -253,29 +257,37 @@ About Page Styling
 /* ==============================
 Footer Styling
 ================================= */
+
+footer {
+  padding: 10px;
+  background-color: #365c65;
+}
+
 #contact h2 {
+  color: #fffcf2;
   text-align: center;
 }
 
 #contact p {
+  color: #fffcf2;
   text-align: center;
 }
 
 .social {
   list-style-type: none;
-  padding: 0;
-  margin-left: -10px;
+  padding: 10px;
   text-align: center;
 }
 
 .social li {
+  font-size: 30px;
+  color: #fffcf2;
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .copyright p {
-  text-align: left;
+  font-size: 12px;
 }
 
 /* ==============================
