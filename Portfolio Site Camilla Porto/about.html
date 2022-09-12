@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Camilla Porto UX/UI Designer, Salt Lake City, UT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b62f87d407.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!--header section-->
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo/logo@2x.png" alt="Camilla Porto Logo">
+          <nav>
+            <ul>
+              <li><a href="index.html"> Work </a></li>
+              <li><a href="about.html"> About </a></li>
+              <li><a href="#contact" onclick="menuToggle()"> Contact </a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--end header section-->
+
+    <!--Start about section-->
+    <main class="aboutme">
+      <div class="abouttitle"><!-- start about section title -->
+        <div class="container"><!--start container to hold title-->
+          <h1>About Me</h1>
+        </div><!--end container to hold title-->
+      </div><!--end about section title-->
+
+      <div><!--Start about section content-->
+        <div class="container"><!-- start container holding all content -->
+          <div class="center">
+            <picture>
+              <source srcset="img/profile/profile@1x.png" media="(max-width:767px)">
+                <img class="profile" src="img/profile/profile@2x.png" alt="My Image">
+            </picture>
+          </div>
+
+          <div class="row"><!--start container holding content-->
+            <div class="col-md-6 col-lg-7"><!--start container holding About Me content-->
+              <h2>My Story</h2>
+              <p>
+                Hi! I am Camilla, a UX/UI designer based in Salt Lake City, UT.
+              </p>
+              <p>
+                I was born in Brazil and moved quite often growing up, which greatly influenced how I see the world and my openness to art, culture and food. I love to cook and explore new places with friends and family. I like to use my experience with science, technology and education to enhance the way people interact with my designs. One of my favorite activities is to think about everyday problems creatively and produce new and more fun ways to do things.
+              </p>
+              <div> <!--resume link-->
+                <a href="files/resume.pdf" target="_blank" class="button">View my Resume</a>
+              </div><!--end resume link-->
+
+              <div><!--download resume-->
+                <a href="resume.pdf" class="download" download>Download Resume</a>
+              </div><!--close download resume-->
+
+            </div> <!--end container holding about me content-->
+
+
+            <div class="row"><!--start container holding skills and tools-->
+
+              <div class="col-lg-8"><!--open containers for skills and tools boxes-->
+                <h2>Skills and Tools</h2>
+                <div class="col-md-6"><!--open skills section-->
+                  <h3>Relevant Skills</h3>
+                    <ul>
+                      <li>UI/UX design</li>
+                      <li>User research</li>
+                      <li>Usability testing and analysis</li>
+                      <li>Style guide design</li>
+                      <li>Rapid prototyping</li>
+                      <li>Web Design</li>
+                      <li>Web Development</li>
+                      <li>Illustration</li>
+                      <li>HTML, CSS</li>
+                      <li>Javascript</li>
+                    </ul>
+                  </div><!--close skills section-->
+              <div class="col-md-6"><!--open tools section-->
+               <h3>Tools I use</h3>
+                 <ul>
+                   <li>InVision</li>
+                   <li>Balsamiq</li>
+                   <li>Adobe Suite</li>
+                   <li>Lucidchart</li>
+                   <li>Figma</li>
+                 </ul>
+              </div><!--close tools section-->
+            </div><!--close containers for skills and tools boxes-->
+          </div><!--close container holding skills and tools-->
+        </div><!--end container holding content-->
+      </div><!--close about section content-->
+    </div><!--end about section content-->
+  </main><!--end about section-->
+
+  <footer id="contact">
+    <div class="container">
+      <h2>GET IN TOUCH</h2>
+      <p>
+        Do you have a design project you need help with? I'd love to chat about it!
+      </p>
+      <div>
+        <p><a href="mailto:camm.porto@gmail.com" class="button contact">Email me</a></p>
+      </div>
+
+    </div>
+
+    <div>
+      <!--Social Media Layout and Placeholders-->
+      <ul class="social">
+        <li>
+          <!-- LinkedIn profile -->
+          <a class="linkedin" href="https://www.linkedin.com/in/camilla-porto-355985242/" target="_blank"></a>
+          <!-- LinkedIn icon --><i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li>
+          <!-- Behance profile -->
+          <a class="behance" href="https://www.behance.net/camillaporto2" target="_blank"></a>
+          <!-- Behance icon --><i class="fa-brands fa-behance-square"></i>
+        </li>
+        <li>
+          <!-- Instagram profile -->
+          <a class="instagram" href="https://www.instagram.com/porto_camilla/" target="_blank"></a>
+          <!-- Instagram icon --><i class="fa-brands fa-instagram-square"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright Camilla 2022</p>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
